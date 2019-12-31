@@ -207,9 +207,7 @@ end
 
 def winning_team
   game_information = game_hash
-  game_information.each do |key, value|
 
-  end
 end
 
 def player_with_longest_name
