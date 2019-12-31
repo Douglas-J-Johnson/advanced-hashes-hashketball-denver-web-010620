@@ -126,6 +126,6 @@ def game_hash
           }
         }
 
-  pp game_information
+  #pp game_information
   return game_information
 end
