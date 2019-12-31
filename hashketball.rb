@@ -129,12 +129,18 @@ def game_hash
 end
 
 def get_player(game_information, player_name)
+  players = []
+  
   game_information.each do |key, value|
+    players = game_information[key][:players]
+
+    players.each do |player|
     #game_information[key].each do |sub_key, sub_value|
     #  if sub_key == :player_name && sub_value == player_name then
     #    return
     #  end
     #end
+    end
   end
 
   return nil
