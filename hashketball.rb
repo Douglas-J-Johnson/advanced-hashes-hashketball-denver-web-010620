@@ -227,13 +227,15 @@ def player_with_longest_name
   game_information = game_hash
   players = get_player_hashes(game_information)
 
-  longest_named_player = ""
+  longest_player_name = ""
 
   players.each do |player|
-    if player[:player_name].length > longest_named_player then
-      longest_named_player = player[:player_name]
+    if player[:player_name].length > longest_player_name.length then
+      longest_player_name = player[:player_name]
     end
   end
+
+  return longest_player_name
 end
 
 def long_name_steals_a_ton?
