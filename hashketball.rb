@@ -190,9 +190,9 @@ def player_numbers(team_name)
   game_information = game_hash
   player_numbers = []
 
-  game_information.each do |team|
-    if team[:team_name] == team_name then
-      #team[:players].each {|player| player_numbers.push(player[:number])}
+  game_information.each do |key, value|
+    if value[:team_name] == team_name then
+      team[:players].each {|player| player_numbers.push(player[:number])}
     end
   end
 
