@@ -218,14 +218,14 @@ def most_points_scored
 end
 
 def team_total(team_data)
-  
+
 end
 
 def winning_team
   game_information = game_hash
 
   if team_total(game_hash[:home]) > team_total(game_hash[:away]) then
-    return game_hash[:home][:team_name]    
+    return game_hash[:home][:team_name]
   elsif team_total(game_hash[:home]) < team_total(game_hash[:away]) then
     return game_hash[:away][:team_name]
   else
