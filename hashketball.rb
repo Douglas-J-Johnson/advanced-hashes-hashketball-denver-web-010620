@@ -193,6 +193,7 @@ end
 def player_stats(player_name)
   game_information = game_hash
   player = get_player(game_information, player_name)
+  player.delete(:player_name)
 
   return player
 end
