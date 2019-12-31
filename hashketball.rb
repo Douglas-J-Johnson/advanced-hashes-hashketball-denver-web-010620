@@ -219,7 +219,7 @@ end
 
 def team_total(team_data)
   team_total = 0
-  
+
   team_data[:players].each do |player|
   end
 
