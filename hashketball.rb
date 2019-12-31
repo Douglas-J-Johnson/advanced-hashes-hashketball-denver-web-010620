@@ -130,7 +130,7 @@ end
 
 def get_player(game_information, player_name)
   players = []
-  
+
   game_information.each do |key, value|
     players = game_information[key][:players]
 
