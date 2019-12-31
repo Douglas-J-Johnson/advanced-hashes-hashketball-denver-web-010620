@@ -135,7 +135,9 @@ def get_player(game_information, player_name)
     players = game_information[key][:players]
 
     players.each do |player|
-      if player[:player_name] = player_name
+      if player[:player_name] == player_name then
+        return player
+      end
     end
   end
 
