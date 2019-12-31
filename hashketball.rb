@@ -135,7 +135,7 @@ def get_player_hashes(game_information)
     players = players + game_information[key][:players]
   end
 
-  return player
+  return players
 end
 
 def get_player(game_information, player_name)
