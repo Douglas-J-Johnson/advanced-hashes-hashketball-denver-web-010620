@@ -206,6 +206,7 @@ end
 
 def winning_team
   game_information = game_hash
+  pp game_information
   players = get_player_hashes(game_information)
 
   pp players
