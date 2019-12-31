@@ -186,8 +186,17 @@ def team_names
   return team_names
 end
 
-def player_numbers
+def player_numbers(team_name)
+  game_information = game_hash
+  player_numbers = []
 
+  game_information.each do |team|
+    if team["team_name"] = team_name then
+      
+    end
+  end
+
+  return player_numbers
 end
 
 def player_stats(player_name)
