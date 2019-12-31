@@ -199,7 +199,7 @@ def player_stats(player_name)
       return player
     end
   end
-  
+
   return nil
 end
 
