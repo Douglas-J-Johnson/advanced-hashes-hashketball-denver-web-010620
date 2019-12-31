@@ -198,12 +198,27 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
+  game_information = game_hash
+  players = get_player_hashes(game_information)
+  player_points = {}
+  max_points = 0
+  max_player = nil
+
+  players.each do |player|
+    if player[:points] > max_points then
+      max_points = player[:points]
+      max_player = player[:player_name]
+    end
+  end
+
+  return max_player
 end
 
 def winning_team
   game_information = game_hash
   players = get_player_hashes(game_information)
 
+  
 
 end
 
