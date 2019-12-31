@@ -128,20 +128,30 @@ def game_hash
   return game_information
 end
 
-def get_player()
+def get_player(game_information, player_name)
+  game_information.each do |key, value|
+    #game_information[key].each do |sub_key, sub_value|
+    #  if sub_key == :player_name && sub_value == player_name then
+    #    return 
+    #  end
+    #end
+  end
 
+  return nil
 end
 
 def num_points_scored(player_name)
   #Takes a ":player_name" returns :points(integer) for the player specified
-  player = get_player(player_name)
+  game_information = game_hash
+  player = get_player(game_information, player_name)
 
   return player[:points]
 end
 
 def shoe_size(player_name)
   #Takes a ":player_name" returns :shoe(integer) for the player specified
-  player = get_player(player_name)
+  game_information = game_hash
+  player = get_player(game_information, player_name)
 
   return player[:shoe]
 end
