@@ -193,7 +193,7 @@ end
 def player_stats
   game_information = game_hash(player_name)
   players = get_player_hashes(game_information)
-  
+
   players.each do |player|
     if player[:player_name] == player_name then
       return player
