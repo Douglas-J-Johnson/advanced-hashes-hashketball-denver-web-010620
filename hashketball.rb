@@ -204,7 +204,6 @@ end
 def most_points_scored
   game_information = game_hash
   players = get_player_hashes(game_information)
-  player_points = {}
   max_points = 0
   max_player = nil
 
@@ -222,12 +221,13 @@ def winning_team
   game_information = game_hash
   players = get_player_hashes(game_information)
 
-
-
 end
 
 def player_with_longest_name
+  game_information = game_hash
+  players = get_player_hashes(game_information)
 
+  
 end
 
 def long_name_steals_a_ton?
