@@ -192,7 +192,7 @@ def player_numbers(team_name)
 
   game_information.each do |key, value|
     if value[:team_name] == team_name then
-      #team[:players].each {|player| player_numbers.push(player[:number])}
+      value[:players].each {|player| player_numbers.push(player[:number])}
     end
   end
 
