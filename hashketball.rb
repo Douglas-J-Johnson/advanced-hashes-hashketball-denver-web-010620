@@ -190,7 +190,7 @@ def player_numbers
 
 end
 
-def player_stats
+def player_stats(player_name)
   game_information = game_hash(player_name)
   players = get_player_hashes(game_information)
 
@@ -199,7 +199,7 @@ def player_stats
       return player
     end
   end
-
+  
   return nil
 end
 
