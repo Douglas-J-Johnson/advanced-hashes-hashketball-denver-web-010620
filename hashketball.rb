@@ -207,7 +207,9 @@ end
 
 def winning_team
   game_information = game_hash
+  players = get_player_hashes(game_information)
 
+  pp players
 end
 
 def player_with_longest_name
