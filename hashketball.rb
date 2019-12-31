@@ -132,7 +132,7 @@ def get_player(game_information, player_name)
   game_information.each do |key, value|
     #game_information[key].each do |sub_key, sub_value|
     #  if sub_key == :player_name && sub_value == player_name then
-    #    return 
+    #    return
     #  end
     #end
   end
