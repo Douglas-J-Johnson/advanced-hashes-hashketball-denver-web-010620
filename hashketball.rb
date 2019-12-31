@@ -139,15 +139,11 @@ def get_player_hashes(game_information)
 end
 
 def get_player(game_information, player_name)
-  players = []
+  players = get_player_hashes(game_information)
 
-  game_information.each do |key, value|
-    players = game_information[key][:players]
-
-    players.each do |player|
-      if player[:player_name] == player_name then
-        return player
-      end
+  players.each do |player|
+    if player[:player_name] == player_name then
+      return player
     end
   end
 
@@ -206,10 +202,9 @@ end
 
 def winning_team
   game_information = game_hash
-  pp game_information
   players = get_player_hashes(game_information)
 
-  pp players
+  
 end
 
 def player_with_longest_name
