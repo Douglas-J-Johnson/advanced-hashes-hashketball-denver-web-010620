@@ -130,7 +130,7 @@ end
 
 def get_player_hashes(game_information)
   players = []
-  
+
   game_information.each do |key, value|
     players = players + game_information[key][:players]
   end
@@ -192,11 +192,11 @@ def team_names
 end
 
 def player_numbers
-  
+
 end
 
 def player_stats
-  
+
 end
 
 def big_shoe_rebounds
@@ -208,12 +208,12 @@ end
 def winning_team
   game_information = game_hash
   game_information.each do |key, value|
-    
+
   end
 end
 
 def player_with_longest_name
-  
+
 end
 
 def long_name_steals_a_ton?
