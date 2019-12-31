@@ -60,16 +60,16 @@ def game_hash
               :blocks => 7,
               :slam_dunks => 2
             }
-       ]
-     },
-     :away => {
-       :team_name => "Charlotte Hornets",
-       :colors => ["Turquoise","Purple"],
-       :players => [
-
-       ]
-     }
-  }
+          ]
+        },
+        :away => {
+          :team_name => "Charlotte Hornets",
+          :colors => ["Turquoise","Purple"],
+          :players => [
+            
+          ]
+        }
+      }
 
   pp game_information
   return game_information
