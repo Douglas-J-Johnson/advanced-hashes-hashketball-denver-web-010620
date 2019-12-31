@@ -128,12 +128,22 @@ def game_hash
   return game_information
 end
 
+def get_player()
+  
+end
+
 def num_points_scored(player_name)
   #Takes a ":player_name" returns :points(integer) for the player specified
+  player = get_player(player_name)
+
+  return player[:points]
 end
 
 def shoe_size(player_name)
   #Takes a ":player_name" returns :shoe(integer) for the player specified
+  player = get_player(player_name)
+
+  return player[:shoe]
 end
 
 def team_colors(team_name)
