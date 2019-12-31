@@ -13,14 +13,14 @@ def game_hash
           :steals => integer,
           :blocks => integer,
           :slam_dunks => integer
-        }     
+        }
        ]
      },
      :away => {
        :team_name => "Charlotte Hornets",
        :colors => ["Turquoise","Purple"],
        :players => [
-         
+
        ]
      }
   }
