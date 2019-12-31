@@ -218,7 +218,7 @@ def winning_team
   game_information = game_hash
   players = get_player_hashes(game_information)
 
-  
+
 
 end
 
