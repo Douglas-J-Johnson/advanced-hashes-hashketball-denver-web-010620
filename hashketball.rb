@@ -125,7 +125,23 @@ def game_hash
             ]
           }
         }
-
-  #pp game_information
   return game_information
+end
+
+def num_points_scored(player_name)
+  #Takes a ":player_name" returns :points(integer) for the player specified
+end
+
+def shoe_size(player_name)
+  #Takes a ":player_name" returns :shoe(integer) for the player specified
+end
+
+def team_colors(team_name)
+  game_information = game_hash
+
+  if game_information[:home][:team_name] == team_name then
+    return game_information[:home][:colors]
+  else
+    return game_information[:away][:colors]
+  end
 end
