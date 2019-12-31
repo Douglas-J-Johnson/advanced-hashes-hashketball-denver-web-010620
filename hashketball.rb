@@ -227,7 +227,7 @@ def player_with_longest_name
   game_information = game_hash
   players = get_player_hashes(game_information)
 
-  
+
 end
 
 def long_name_steals_a_ton?
