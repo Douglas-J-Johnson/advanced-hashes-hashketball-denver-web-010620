@@ -145,3 +145,9 @@ def team_colors(team_name)
     return game_information[:away][:colors]
   end
 end
+
+def team_names
+  team_names = []
+
+  return team_names
+end
