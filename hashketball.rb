@@ -220,7 +220,7 @@ end
 def team_total(team_data)
   team_total = 0
 
-  team_data[:players].each do |player|
+  team_data[:players].each {|player| team_total = team_total + player[:points]
   end
 
   return team_total
