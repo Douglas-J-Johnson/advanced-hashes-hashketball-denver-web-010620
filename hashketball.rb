@@ -275,5 +275,8 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
+  player = get_player(game_information, player_with_longest_name)
+  steals = player[:steals]
 
+  puts steals
 end
